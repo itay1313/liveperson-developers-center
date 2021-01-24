@@ -1,8 +1,8 @@
 const linkResolver = (doc) => {
-    if (doc.type === 'page') {
-      return `/${doc.uid}`
-    }
-    return '/'
+  if (doc.type === 'page') {
+    return `/${doc.uid}`
   }
-  
-  module.exports = linkResolver
+  return '/'
+}
+
+module.exports = linkResolver
