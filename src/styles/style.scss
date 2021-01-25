@@ -4,6 +4,7 @@
 :root {
   // size
   --space-unit: 4px;
+  --space2: calc(2 * var(--space-unit)); // 8px
   --space3: calc(3 * var(--space-unit)); // 14px
   --space4: calc(4 * var(--space-unit)); // 16px
   --space6: calc(6 * var(--space-unit)); // 24px
@@ -63,6 +64,13 @@ div#gatsby-focus-wrapper {
   .site-header {
     padding: var(--space8);
     border-bottom: 1px solid var(--lighter-gray);
+    nav {
+      ul {
+        li {
+          margin-left: var(--space8);
+        }
+      }
+    }
   }
   .dev-body {
     display: grid;
