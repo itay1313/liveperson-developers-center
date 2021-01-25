@@ -6,9 +6,18 @@ import "./../styles/style.scss";
 const Layout = ({ isHomepage, children, navigation }) => (
   <>
     <Header isHomepage={isHomepage} navigation={navigation} />
-    <div className="flex">
-      <div className="flex column">sidebar</div>
-      <div>{children}</div>
+    <div className="flex dev-body">
+      <div className="flex column">
+        <div className="dev-sticky sticky flex column">
+          <ul>
+            <li> Getting Started</li>
+            <li> Agent Experience</li>
+            <li> Conversational AI</li>
+            <li> Client Side Configuration</li>
+          </ul>
+        </div>
+      </div>
+      <div className="dev-content">{children}</div>
     </div>
     <Footer />
   </>

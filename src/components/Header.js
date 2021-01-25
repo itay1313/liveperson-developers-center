@@ -1,18 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import { RichText } from 'prismic-reactjs'
+import React from "react";
+import { Link, graphql } from "gatsby";
+import { RichText } from "prismic-reactjs";
+import prismicLogo from "./../images/liveperson-header.svg";
 
 const Header = ({ isHomepage, navigation }) => {
-  const homepageClass = isHomepage ? 'homepage-header' : ''
-  const topNav = navigation.data.top_navigation
+  const homepageClass = isHomepage ? "homepage-header" : "";
+  const topNav = navigation.data.top_navigation;
 
   return (
-    <header className={`site-header ${homepageClass}`}>
+    <header className={`flex justify-between site-header ${homepageClass}`}>
       <Link to="/">
-        <div className="logo">Example Site</div>
+        <div className="logo flex">
+          <img className="logo-image" src={prismicLogo} alt="our logo" />
+        </div>
       </Link>
       <nav>
-        <ul>
+        <ul className="flex">
           {topNav.map((navItem, index) => {
             return (
               <li key={`link-${index}`}>
@@ -20,13 +23,13 @@ const Header = ({ isHomepage, navigation }) => {
                   {RichText.asText(navItem.link_label.raw)}
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export const query = graphql`
   fragment HeaderQuery on PrismicNavigation {
@@ -43,6 +46,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Header
+export default Header;
