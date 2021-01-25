@@ -2,7 +2,7 @@ const linkResolver = require('./src/utils/linkResolver')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Prismic Tutorial',
+    title: 'Liveperson new developers center test',
     description: 'Learn how to integrate Prismic into your Gatsby project.',
   },
   plugins: [
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: [`Lato\:400,400,700,700i,900`, `Amiri\:400,400,700,700i`],
+        fonts: [`Roboto\:400,400,700,700i,900`, `Amiri\:400,400,700,700i`],
       },
     },
   ],
