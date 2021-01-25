@@ -1,25 +1,25 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import SliceZone from '../components/SliceZone'
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import SliceZone from "../components/SliceZone";
 
 const Page = ({ data }) => {
-  if (!data) return null
-  const document = data.allPrismicPage.edges[0].node
-  const prismicNavigation = data.prismicNavigation
+  if (!data) return null;
+  const document = data.allPrismicPage.edges[0].node;
+  const prismicNavigation = data.prismicNavigation;
 
   const capitalizeFirstLetter = (input) => {
-    return input[0].toUpperCase() + input.slice(1)
-  }
+    return input[0].toUpperCase() + input.slice(1);
+  };
 
   return (
     <Layout navigation={prismicNavigation}>
       <SEO title={capitalizeFirstLetter(document.uid)} />
       <SliceZone sliceZone={document.data.body} />
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query PageQuery($uid: String) {
@@ -114,6 +114,6 @@ export const query = graphql`
       ...HeaderQuery
     }
   }
-`
+`;
 
-export default Page
+export default Page;

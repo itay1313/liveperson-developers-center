@@ -1,13 +1,13 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import HomepageBanner from '../components/HomepageBanner'
-import SliceZone from '../components/SliceZone'
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import HomepageBanner from "../components/HomepageBanner";
+import SliceZone from "../components/SliceZone";
 
 const Homepage = ({ data }) => {
-  if (!data) return null
-  const document = data.allPrismicHomepage.edges[0].node.data
+  if (!data) return null;
+  const document = data.allPrismicHomepage.edges[0].node.data;
 
   const bannerContent = {
     title: document.banner_title,
@@ -15,9 +15,9 @@ const Homepage = ({ data }) => {
     link: document.banner_link,
     linkLabel: document.banner_link_label,
     background: document.banner_background,
-  }
+  };
 
-  const prismicNavigation = data.prismicNavigation
+  const prismicNavigation = data.prismicNavigation;
 
   return (
     <Layout isHomepage navigation={prismicNavigation}>
@@ -25,8 +25,8 @@ const Homepage = ({ data }) => {
       <HomepageBanner bannerContent={bannerContent} />
       <SliceZone sliceZone={document.body} />
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query Homepage {
@@ -139,6 +139,6 @@ export const query = graphql`
       ...HeaderQuery
     }
   }
-`
+`;
 
-export default Homepage
+export default Homepage;

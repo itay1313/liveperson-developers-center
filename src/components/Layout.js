@@ -1,16 +1,17 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import './../styles/reset.css'
-import './../styles/common.css'
-import './../styles/style.css'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import "./../styles/style.scss";
 
 const Layout = ({ isHomepage, children, navigation }) => (
   <>
     <Header isHomepage={isHomepage} navigation={navigation} />
-    {children}
+    <div className="flex">
+      <div className="flex column">sidebar</div>
+      <div>{children}</div>
+    </div>
     <Footer />
   </>
-)
+);
 
-export default Layout
+export default Layout;
