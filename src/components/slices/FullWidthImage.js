@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const FullWidthImage = ({ slice }) => (
   <section className="full-width-image content-section">
@@ -7,6 +7,6 @@ const FullWidthImage = ({ slice }) => (
       alt={slice.primary.full_width_image.alt}
     />
   </section>
-)
+);
 
-export default FullWidthImage
+export default FullWidthImage;

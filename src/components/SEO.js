@@ -15,6 +15,16 @@ const SEO = ({ description, title }) => (
         <Helmet>
           <title>{metaTitle}</title>
           <meta name="description" content={metaDescription} />
+        {/* need to put in a different file */}
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
         </Helmet>
       )
     }}

@@ -130,6 +130,19 @@ export const query = graphql`
                   }
                 }
               }
+              ... on PrismicHomepageBodyBackgroundimagetext {
+                slice_type
+                primary {
+                  card_background {
+                    thumbnails
+                    url
+                    alt
+                  }
+                  card_title {
+                    raw
+                  }
+                }
+              }
             }
           }
         }

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./../styles/style.scss";
+import "./../styles/main.scss";
 
 const Layout = ({ isHomepage, children, navigation }) => (
   <>
@@ -9,6 +9,7 @@ const Layout = ({ isHomepage, children, navigation }) => (
     <div className="flex dev-body">
       <div className="flex column">
         <div className="dev-sticky sticky flex column">
+          {/* Need to replace */}
           <ul>
             <li> Getting Started</li>
             <li> Agent Experience</li>

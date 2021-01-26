@@ -1,0 +1,78 @@
+
+:root {
+    // size
+    --space-unit: 4px;
+    --space2: calc(2 * var(--space-unit)); // 8px
+    --space3: calc(3 * var(--space-unit)); // 14px
+    --space4: calc(4 * var(--space-unit)); // 16px
+    --space6: calc(6 * var(--space-unit)); // 24px
+    --space8: calc(8 * var(--space-unit)); // 32px
+    --space10: calc(10 * var(--space-unit)); // 40px
+    --space12: calc(12 * var(--space-unit)); // 48px
+    --space16: calc(16 * var(--space-unit)); // 64px
+    --space175: calc(17.5 * var(--space-unit)); // 70px
+    --space25: calc(25 * var(--space-unit)); // 100px
+    // colors
+    --primary-color: #090c43;
+    --light-color: #ffffff;
+    --light-blue: #005ef4;
+    --dark-blue: #090C43;
+    --lighter-gray: #f8f5f3;
+    --darker-gray: #463e36;
+    --navy-lighter-gray: #dadbe5;
+  }
+  
+  @mixin h1-text {
+    color: var(--dark-blue);
+    font-size: var(--space8);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin-bottom: var(--space4);
+  }
+  @mixin body-text {
+    color: var(--dark-blue);
+    font-size: var(--space4);
+    font-style: normal;
+    font-weight: normal;
+    line-height: var(--space6);
+    letter-spacing: 0.01em;
+  }
+  @mixin h1-text {
+    color: var(--dark-blue);
+    font-size: var(--space8);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+  }
+  
+  @mixin small-text {
+    font-family: "Roboto", "Helvetica";
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: var(--space4);
+    margin: 0 0 var(--space-unit) 0;
+    z-index: 1;
+  }
+  
+  @mixin smaller-text {
+    font-family: "Roboto", "Helvetica";
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    font-size: var(--space3);
+    margin: 0 0 var(--space-unit) 0;
+    z-index: 1;
+  }
+  
+// Break points
+$max-width-sm: 767px;
+$min-width-sm: 768px;
+
+$min-width-emph: 950px;

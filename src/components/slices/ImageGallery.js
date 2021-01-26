@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { RichText } from 'prismic-reactjs'
+import React from "react";
+import { Link } from "gatsby";
+import { RichText } from "prismic-reactjs";
 
 const ImageGallery = ({ slice }) => {
   return (
@@ -22,7 +22,7 @@ const ImageGallery = ({ slice }) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ImageGallery
+export default ImageGallery;
