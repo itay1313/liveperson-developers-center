@@ -1,0 +1,40 @@
+.quote {
+    background-color: rgb(237, 245, 250);
+    overflow-wrap: break-word;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.71;
+    color: #090c43;
+    border-left-color: #2d9cdb;
+    padding: 12px 24px 12px 30px;
+    border-radius: 4px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    margin-bottom: var(--space6);
+}
+
+// .post-quote {
+//     blockquote {
+//       margin-bottom: 2rem;
+//       display: inline-block;
+//       font-style: italic;
+//       font-size: 24px;
+//       color: #868686;
+  
+//       @media screen and (min-width: $min-width-emph) {
+//         width: 130%;
+//         margin: 0 -15% 2rem -15%;
+//         font-size: 30px;
+//         padding: 0;
+//       }
+  
+//       &:before {
+//         content: "« "
+//       }
+  
+//       &:after {
+//         content: " »"
+//       }
+//     }
+//   }
+  

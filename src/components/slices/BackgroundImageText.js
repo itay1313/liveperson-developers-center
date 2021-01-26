@@ -2,7 +2,7 @@ import React from "react";
 import { RichText } from "prismic-reactjs";
 
 const BackgroundImageText = ({ slice }) => (
-  <section className="full-width-image content-section">
+  <section className="background-image-text">
     <div className="flex gap20">
       <div>
         <img
