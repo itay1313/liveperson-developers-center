@@ -7,7 +7,7 @@ const Layout = ({ isHomepage, children, navigation }) => (
   <>
     <Header isHomepage={isHomepage} navigation={navigation} />
     <div className="flex dev-body">
-      <div className="flex column">
+      <div className="sidebar flex column">
         <div className="dev-sticky sticky flex column">
           {/* Need to replace */}
           <ul>

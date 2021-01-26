@@ -32,6 +32,11 @@ div#gatsby-focus-wrapper {
       display: flex;
       flex-direction: column;
     }
+    .sidebar {
+      width: 300px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     .dev-sticky {
       padding: var(--space8) var(--space6);
       ul {
@@ -40,6 +45,7 @@ div#gatsby-focus-wrapper {
           margin-bottom: var(--space3);
         }
       }
+    }
     }
     .dev-content {
       overflow-y: scroll;

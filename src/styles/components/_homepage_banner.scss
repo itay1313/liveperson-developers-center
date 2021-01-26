@@ -1,0 +1,38 @@
+.card-container {
+    margin-top: var(--space12);
+    & > a {
+        flex-basis: 48%;
+        flex-grow: 1;
+        @media (max-width: 1024px) {
+            flex-basis: 100%;
+        }
+    }
+    .homepage-banner {
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+        width: 100%;
+        .banner-content {
+            padding: 58px 22px;
+            p.banner-description {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 40px;
+                color: #ffffff;
+                letter-spacing: 0.008em;
+                margin-bottom: var(--space4);
+            }
+            a {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                padding-right: 24px;
+                letter-spacing: 0.01em;
+                color: white;
+            }
+        }
+    }
+}
