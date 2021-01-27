@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 import "./../styles/main.scss";
 
 const Layout = ({ isHomepage, children, navigation }) => (
@@ -10,12 +11,7 @@ const Layout = ({ isHomepage, children, navigation }) => (
       <div className="sidebar flex column">
         <div className="dev-sticky sticky flex column">
           {/* Need to replace */}
-          <ul>
-            <li> Getting Started</li>
-            <li> Agent Experience</li>
-            <li> Conversational AI</li>
-            <li> Client Side Configuration</li>
-          </ul>
+          <Sidebar />
         </div>
       </div>
       <div className="dev-content">{children}</div>

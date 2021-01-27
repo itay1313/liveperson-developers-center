@@ -103,3 +103,9 @@ div#gatsby-focus-wrapper {
 .section-space {
   padding: var(--space25) var(--space16);
 }
+
+
+.multi > ul, ol {margin-bottom: 0px;}
+.multi_list     {margin-bottom: 20px;}
+.multi.level_2  {margin-left:   1em;}
+.multi.level_3  {margin-left:   1.9em;}
