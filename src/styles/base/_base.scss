@@ -37,15 +37,15 @@ div#gatsby-focus-wrapper {
       @media (max-width: 767px) {
         width: 100%;
       }
-    .dev-sticky {
-      padding: var(--space8) var(--space6);
-      ul {
-        li {
-          color: #463e36;
-          margin-bottom: var(--space3);
+      .dev-sticky {
+        padding: var(--space8) var(--space6);
+        ul {
+          li {
+            color: #463e36;
+            margin-bottom: var(--space3);
+          }
         }
       }
-    }
     }
     .dev-content {
       overflow-y: scroll;
@@ -103,9 +103,3 @@ div#gatsby-focus-wrapper {
 .section-space {
   padding: var(--space25) var(--space16);
 }
-
-
-.multi > ul, ol {margin-bottom: 0px;}
-.multi_list     {margin-bottom: 20px;}
-.multi.level_2  {margin-left:   1em;}
-.multi.level_3  {margin-left:   1.9em;}
