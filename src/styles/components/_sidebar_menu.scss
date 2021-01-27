@@ -3,7 +3,10 @@
     li {
       position: relative;
       padding-left: 15px;
-      padding-bottom: 5px;
+      padding-bottom: 15px;
+      &:last-child {
+        padding-bottom: 0;
+      }
       &:before {
         border-top: 10px solid transparent;
         border-left: 10px solid #675d55;
@@ -13,8 +16,15 @@
         left: -15px;
         content: "";
       }
-      &:first-child {
+      ul {
         margin-top: 15px;
+
+      }
+    }
+    & > li {
+      &:first-child {
+        margin-bottom: 25px;
+        padding-bottom: 0;
       }
     }
   }
