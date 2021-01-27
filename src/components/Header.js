@@ -4,6 +4,8 @@ import { RichText } from "prismic-reactjs";
 import prismicLogo from "./../images/liveperson-header.svg";
 
 const Header = ({ isHomepage, navigation }) => {
+  if (!navigation) return null;
+
   const homepageClass = isHomepage ? "homepage-header" : "";
   const topNav = navigation.data.top_navigation;
 

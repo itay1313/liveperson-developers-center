@@ -23,9 +23,9 @@ const HomepageBanner = ({ bannerContent }) => (
             <p className="banner-description">
               {RichText.asText(bannerContent.description.raw)}
             </p>
-            <Link to={bannerContent.link.url} className="banner-button">
+            {/* <Link to={bannerContent.link.url} className="banner-button">
               {RichText.asText(bannerContent.linkLabel.raw)}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Link>
@@ -43,9 +43,9 @@ const HomepageBanner = ({ bannerContent }) => (
             <p className="banner-description">
               {RichText.asText(bannerContent.description.raw)}
             </p>
-            <Link to={bannerContent.link.url} className="banner-button">
+            {/* <Link to={bannerContent.link.url} className="banner-button">
               {RichText.asText(bannerContent.linkLabel.raw)}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Link>
