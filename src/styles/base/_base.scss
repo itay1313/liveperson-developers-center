@@ -28,13 +28,13 @@ div#gatsby-focus-wrapper {
     display: grid;
     grid-template-columns: 1fr 6fr;
     overflow: hidden;
-    @media (max-width: 767px) {
+    @media (max-width: $max-width-sm) {
       display: flex;
       flex-direction: column;
     }
     .sidebar {
       width: 300px;
-      @media (max-width: 767px) {
+      @media (max-width: $max-width-sm) {
         width: 100%;
       }
       .dev-sticky {

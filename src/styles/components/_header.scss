@@ -8,10 +8,17 @@
                 padding: 12px;
                 font-weight: 500;
                 background-color: var(--electric-blue);
-
                 border: 0px;
                 a {
                     color: white;
+                }
+            }
+        }
+        @media (max-width: $max-width-sm) {
+            li {
+                &:last-child,
+                &:first-child {
+                    display: none;
                 }
             }
         }
