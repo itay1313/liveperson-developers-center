@@ -31,6 +31,7 @@ div#gatsby-focus-wrapper {
     @media (max-width: $max-width-sm) {
       display: flex;
       flex-direction: column;
+      overflow: initial;
     }
     .sidebar {
       width: 300px;
@@ -42,6 +43,14 @@ div#gatsby-focus-wrapper {
         ul {
           li {
             color: #463e36;
+            a,&::before{
+              cursor: pointer;
+            }
+          }
+          li.open:before{
+  
+              color:red;
+            
           }
         }
       }
@@ -49,6 +58,9 @@ div#gatsby-focus-wrapper {
     .dev-content {
       overflow-y: scroll;
       padding: var(--space12) var(--space6) var(--space8);
+      @media (max-width: $max-width-sm) {
+        overflow-y: initial;
+      }
     }
   }
   footer {

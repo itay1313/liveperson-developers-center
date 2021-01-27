@@ -13,7 +13,8 @@
     --space175: calc(17.5 * var(--space-unit)); // 70px
     --space25: calc(25 * var(--space-unit)); // 100px
     // colors
-    --primary-color: #090c43;
+    --primary-color: #fe5e00;
+    --orange: #fe5e00;
     --light-color: #ffffff;
     --light-blue: #005ef4;
     --electric-blue: #005ef4;
@@ -70,6 +71,16 @@
     font-size: var(--space3);
     margin: 0 0 var(--space-unit) 0;
     z-index: 1;
+  }
+  @mixin arrow-button {
+    border-top: 10px solid transparent;
+    border-left: 10px solid #675d55;
+    transform: rotate(-135deg);
+    top: var(--space-unit);
+    position: absolute;
+    left: -15px;
+    transition: transform 250ms ease-out;
+    content: "";
   }
   
 // Break points
