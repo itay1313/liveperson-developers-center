@@ -2,8 +2,8 @@
   ul.multi_list {
     li {
       position: relative;
-      padding-left: 15px;
-      padding-bottom: 15px;
+      padding-left: var(--space4);
+      padding-bottom: var(--space4);
       &:last-child {
         padding-bottom: 0;
       }
@@ -11,18 +11,18 @@
         border-top: 10px solid transparent;
         border-left: 10px solid #675d55;
         transform: rotate(-135deg);
-        top: 4px;
+        top: var(--space-unit);
         position: absolute;
         left: -15px;
         content: "";
       }
       ul {
-        margin-top: 15px;
+        margin-top: var(--space4);
       }
     }
     & > li {
       &:first-child {
-        margin-bottom: 25px;
+        margin-bottom: var(--space6);
         padding-bottom: 0;
       }
     }
