@@ -1,34 +1,50 @@
 {
-    "Main" : {
-      "body" : {
-        "type" : "Slices",
-        "fieldset" : "Slice zone",
-        "config" : {
-          "labels" : null,
-          "choices" : {
-            "multi-level_list" : {
-              "type" : "Slice",
-              "fieldset" : "Multi-level list",
-              "description" : "Nested ul/ol",
-              "icon" : "format_list_bulleted",
-              "display" : "list",
-              "non-repeat" : { },
-              "repeat" : {
-                "list_level" : {
-                  "type" : "Select",
-                  "config" : {
-                    "options" : [ "level_1", "level_2", "level_3" ],
-                    "label" : "list_level",
-                    "placeholder" : "Select the level for this list"
-                  }
-                },
-                "list" : {
-                  "type" : "StructuredText",
-                  "config" : {
-                    "single" : "list-item, o-list-item",
-                    "label" : "List",
-                    "placeholder" : "List items for this level"
-                  }
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title",
+        "placeholder": "sidebar"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "multi-level_list": {
+            "type": "Slice",
+            "fieldset": "Multi-level list",
+            "description": "Nested ul/ol",
+            "icon": "format_list_bulleted",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "list_level": {
+                "type": "Select",
+                "config": {
+                  "options": [
+                    "level_1",
+                    "level_2",
+                    "level_3"
+                  ],
+                  "label": "list_level",
+                  "placeholder": "Select the level for this list"
+                }
+              },
+              "list": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "list-item, o-list-item",
+                  "label": "List",
+                  "placeholder": "List items for this level"
+                }
+              },
+              "menu_link": {
+                "type": "Link",
+                "config": {
+                  "label": "menu link"
                 }
               }
             }
@@ -37,3 +53,4 @@
       }
     }
   }
+}
