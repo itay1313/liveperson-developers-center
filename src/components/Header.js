@@ -10,14 +10,16 @@ const Header = ({ isHomepage, navigation }) => {
   const topNav = navigation.data.top_navigation;
 
   return (
-    <header className={`flex justify-between site-header ${homepageClass}`}>
+    <header
+      className={`flex justify-between site-header align-center ${homepageClass}`}
+    >
       <Link to="/">
         <div className="logo flex">
           <img className="logo-image" src={prismicLogo} alt="our logo" />
         </div>
       </Link>
       <nav>
-        <ul className="flex">
+        <ul className="flex align-center">
           {topNav.map((navItem, index) => {
             return (
               <li key={`link-${index}`}>

@@ -1,0 +1,19 @@
+.site-header {
+    nav {
+        li {
+            &:nth-child(2) {
+                border-radius: 25px;
+                /* width: 120px; */
+                text-align: center;
+                padding: 12px;
+                font-weight: 500;
+                background-color: var(--electric-blue);
+
+                border: 0px;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
