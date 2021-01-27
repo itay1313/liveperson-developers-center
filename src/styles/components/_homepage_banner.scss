@@ -12,6 +12,9 @@
         background-position: center;
         border-radius: 8px;
         width: 100%;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
         .banner-content {
             padding: 58px 22px;
             p.banner-description {
