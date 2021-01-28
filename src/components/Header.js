@@ -34,7 +34,7 @@ const Header = ({ isHomepage, navigation }) => {
     </header>
   );
 };
-
+// delete comment
 export const query = graphql`
   fragment HeaderQuery on PrismicNavigation {
     data {
