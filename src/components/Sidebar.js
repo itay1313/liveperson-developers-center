@@ -86,22 +86,32 @@ const Sidebar = () => {
 
   return (
 
-
-<ul className="sidebar_menu">
-        {list.map((l) => {
-          return (
-            <li className="multi_list">
-              {l.map((i, idx) => {
-                return <li key={idx} className={i.list_level}>
-                 <a href={i.menu_link.uid}>{RichText.asText(i.list)}</a>
-                 </li>;
-              })}
-            </li>
-          );
-        })}
-      </ul>
-
-
+    <ul className="sidebar_menu">
+    {list.map((l) => {
+      return (
+        <li className="multi_list">
+          {l.map((i, idx) => {
+            //current and next
+            const currentListLevel = Number(l[idx].list_level.substr(6));
+            const nextListLevel = l[idx + 1]
+              ? Number(l[idx + 1].list_level.substr(6))
+              : undefined;
+            return (
+              <li
+                key={idx}
+                className={`${i.list_level} ${
+                  // if current level < nextlevel => render the class children
+                  currentListLevel < nextListLevel && "have-children"
+                }`}
+              >
+                <a href={i.menu_link.uid}>{RichText.asText(i.list)}</a>
+              </li>
+            );
+          })}
+        </li>
+      );
+    })}
+  </ul>
   );
 };
 export default Sidebar;

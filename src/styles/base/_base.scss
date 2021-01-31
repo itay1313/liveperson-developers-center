@@ -27,7 +27,6 @@ div#gatsby-focus-wrapper {
   .dev-body {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    overflow: hidden;
     @media (max-width: $max-width-sm) {
       display: flex;
       flex-direction: column;
@@ -40,23 +39,23 @@ div#gatsby-focus-wrapper {
       }
       .dev-sticky {
         padding: var(--space12) var(--space6) var(--space8);
+        position: sticky;
+        top: 0;
         ul {
           li {
             color: #463e36;
-            a,&::before{
+            a,
+            &::before {
               cursor: pointer;
             }
           }
-          li.open:before{
-  
-              color:red;
-            
+          li.open:before {
+            color: red;
           }
         }
       }
     }
     .dev-content {
-      overflow-y: scroll;
       padding: var(--space12) var(--space6) var(--space8);
       @media (max-width: $max-width-sm) {
         overflow-y: initial;

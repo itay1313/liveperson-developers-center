@@ -2,49 +2,33 @@
   padding-left: var(--space4);
   .dev-sticky {
     // Start of ul menu
-    li.level_2 {
-      padding-left:14px
-  }
-  li.level_1 {
-      margin-top:24px
-  }
-  li.level_2 {
-      padding-left:14px
-  }
-  li.level_3 {
-      padding-left:24px
-  }
-    ul.multi_list {
+    ul.sidebar_menu {
+      // any li
       li {
-        position: relative;
-        padding-left: var(--space4);
-        padding-bottom: var(--space4);
-        &:last-child {
-          padding-bottom: 0;
-        }
-        // inner ul 2nd level
-        ul {
-          margin-top: var(--space4);
-        }
-        a {
-          font-weight: 600;
-        }
+        margin-bottom: var(--space2);
       }
-      & > li {
-        &:first-child {
-          margin-bottom: var(--space6);
-          padding-bottom: 0;
-          &>ul {
-            height: 0;
-            opacity: 0;
-          }
-        }
+      // first level
+      li.level_1 {
+        margin-top: var(--space8);
+      }
+      // second level
+      li.level_2 {
+        margin-left: var(--space4);
+      }
+      // Third Level
+      li.level_3 {
+        margin-left: var(--space8);
+      }
+      // Have Children
+      li.have-children {
+        position: relative;
         &::before {
           @include arrow-button;
         }
-        &:not(open) {
-          
-        }
+      }
+      // The First list menu
+      & > li:first-child > li.level_1:first-child {
+        margin-top: 0;
       }
     }
   }
