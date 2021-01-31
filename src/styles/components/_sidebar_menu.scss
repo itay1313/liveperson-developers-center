@@ -7,11 +7,17 @@
       li {
         margin-bottom: var(--space2);
         @include siderbar-title;
+        &:hover {
+          & > a,
+          &::before {
+            color: var(--primary-color);
+          }
+        }
       }
       // first level
       li.level_1 {
         margin-top: var(--space8);
-
+        font-weight: 600;
       }
       // second level
       li.level_2 {
@@ -27,7 +33,6 @@
         &::before {
           @include side-bar-arrow;
         }
-        
       }
       // The First list menu
       & > li:first-child > li.level_1:first-child {

@@ -118,6 +118,22 @@ export const query = graphql`
                   }
                 }
               }
+              ... on PrismicPageBodyPageTitle {
+                slice_type
+                primary {
+                  page_title {
+                    raw
+                  }
+                }
+              }
+              ... on PrismicPageBodyIntroduction {
+                slice_type
+                primary {
+                  intro {
+                    raw
+                  }
+                }
+              }
             }
           }
         }

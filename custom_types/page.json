@@ -29,7 +29,10 @@
               "columns": {
                 "type": "Select",
                 "config": {
-                  "options": ["1 Column", "2 Columns"],
+                  "options": [
+                    "1 Column",
+                    "2 Columns"
+                  ],
                   "label": "columns"
                 }
               },
@@ -38,7 +41,8 @@
                 "config": {
                   "multi": "paragraph, heading1, heading2, heading3, strong, em, hyperlink",
                   "allowTargetBlank": true,
-                  "label": "content"
+                  "label": "content",
+                  "placeholder": "LivePerson Functions is now enabled on your account. Log in at https://faas.liveperson.net or click on the Functions link from your Conversational Cloud Quick Launch menu"
                 }
               }
             },
@@ -204,6 +208,40 @@
                   "constraint": {},
                   "thumbnails": [],
                   "label": "card background"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "introduction": {
+            "type": "Slice",
+            "fieldset": "Introduction",
+            "description": "Introduction to product",
+            "icon": "add",
+            "display": "list",
+            "non-repeat": {
+              "intro": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Intro"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "page_title": {
+            "type": "Slice",
+            "fieldset": "page title",
+            "description": "Page title ",
+            "icon": "title",
+            "display": "list",
+            "non-repeat": {
+              "page_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "page title"
                 }
               }
             },

@@ -4,6 +4,8 @@ import BackgroundImageText from "./slices/BackgroundImageText";
 import ImageGallery from "./slices/ImageGallery";
 import ImageHighlight from "./slices/ImageHighlight";
 import Quote from "./slices/Quote";
+import Introduction from "./slices/Introduction";
+import PageTitle from "./slices/PageTitle";
 import Text from "./slices/Text";
 
 const SliceZone = ({ sliceZone }) => {
@@ -13,6 +15,8 @@ const SliceZone = ({ sliceZone }) => {
     image_gallery: ImageGallery,
     image_highlight: ImageHighlight,
     quote: Quote,
+    introduction: Introduction,
+    page_title: PageTitle,
     text: Text,
   };
 
