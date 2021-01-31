@@ -2,10 +2,20 @@
   padding-left: var(--space4);
   .dev-sticky {
     // Start of ul menu
-    &>li.ul\.multi_list {
-
-    }
+    li.level_2 {
+      padding-left:14px
+  }
+  li.level_1 {
+      margin-top:24px
+  }
+  li.level_2 {
+      padding-left:14px
+  }
+  li.level_3 {
+      padding-left:24px
+  }
     ul.multi_list {
+      li {
         position: relative;
         padding-left: var(--space4);
         padding-bottom: var(--space4);
@@ -18,7 +28,7 @@
         }
         a {
           font-weight: 600;
-        
+        }
       }
       & > li {
         &:first-child {

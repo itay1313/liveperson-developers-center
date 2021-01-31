@@ -87,19 +87,19 @@ const Sidebar = () => {
   return (
 
 
-<div className="sidebar_menu">
+<ul className="sidebar_menu">
         {list.map((l) => {
           return (
-            <ul className="multi_list">
+            <li className="multi_list">
               {l.map((i, idx) => {
                 return <li key={idx} className={i.list_level}>
                  <a href={i.menu_link.uid}>{RichText.asText(i.list)}</a>
                  </li>;
               })}
-            </ul>
+            </li>
           );
         })}
-      </div>
+      </ul>
 
 
   );
