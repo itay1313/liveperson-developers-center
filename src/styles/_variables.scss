@@ -49,7 +49,12 @@
     font-weight: bold;
     letter-spacing: 0.01em;
   }
-  
+  @mixin siderbar-title {
+    color: var(--dark-blue);
+    font-size: var(--space3);
+    font-style: normal;
+    font-weight: bold;
+  }
   @mixin small-text {
     font-family: "Roboto", "Helvetica";
     font-weight: 700;
@@ -71,6 +76,10 @@
     font-size: var(--space3);
     margin: 0 0 var(--space-unit) 0;
     z-index: 1;
+  }
+  @mixin side-bar-arrow {
+    transition: transform 250ms ease-out;
+    content: "ᐳ";
   }
   @mixin arrow-button {
     border-top: 10px solid transparent;

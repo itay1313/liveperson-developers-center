@@ -6,10 +6,12 @@
       // any li
       li {
         margin-bottom: var(--space2);
+        @include siderbar-title;
       }
       // first level
       li.level_1 {
         margin-top: var(--space8);
+
       }
       // second level
       li.level_2 {
@@ -21,10 +23,11 @@
       }
       // Have Children
       li.have-children {
-        position: relative;
+        display: flex;
         &::before {
-          @include arrow-button;
+          @include side-bar-arrow;
         }
+        
       }
       // The First list menu
       & > li:first-child > li.level_1:first-child {
