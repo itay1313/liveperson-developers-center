@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText } from "prismic-reactjs";
+// import { RichText } from "prismic-reactjs";
 
 const Introduction = ({ slice }) => (
   <section className="content-section quote">

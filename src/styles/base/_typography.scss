@@ -5,7 +5,12 @@ a {
   background-size: 2px 2px;
   background-position: 0 23px;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-sans-serif;
 }
 h1 {
@@ -22,25 +27,37 @@ h3 {
   font-size: 22px;
   font-weight: 900;
 }
+section.full-width-image.content-section {
+  img {
+    margin-bottom: var(--space6);
+  }
+}
+section.content-section.text-section-1col {
+  h3 {
+    margin: var(--space6) 0;
+  }
+}
 .banner-description {
   @include body-text;
 }
-p, pre, ul, ol {
-
+p,
+pre,
+ul,
+ol {
 }
-ul, ol {
-
+ul,
+ol {
 }
-ul li, ol li {
-
+ul li,
+ol li {
 }
 
 pre {
-  white-space: pre-wrap;       // css-3
-  white-space: -moz-pre-wrap;  // Mozilla, since 1999
-  white-space: -pre-wrap;      // Opera 4-6
-  white-space: -o-pre-wrap;    // Opera 7
-  word-wrap: break-word;       // Internet Explorer 5.5+
+  white-space: pre-wrap; // css-3
+  white-space: -moz-pre-wrap; // Mozilla, since 1999
+  white-space: -pre-wrap; // Opera 4-6
+  white-space: -o-pre-wrap; // Opera 7
+  word-wrap: break-word; // Internet Explorer 5.5+
 }
 
 strong {
@@ -56,7 +73,7 @@ em {
     line-height: 45px;
   }
   h2 {
-    font-size: 28px
+    font-size: 28px;
   }
   h3 {
     font-size: 18px;
